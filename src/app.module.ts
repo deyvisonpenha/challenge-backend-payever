@@ -6,8 +6,9 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
+    // username and password passed to easy demostration, just for that database
     MongooseModule.forRoot(
-      'mongodb+srv://<username>:<password>@development.7knus.mongodb.net/test',
+      'mongodb+srv://testDataUser:testPassword@development.7knus.mongodb.net/test',
     ),
     UsersModule,
   ],
